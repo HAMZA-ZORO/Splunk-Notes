@@ -1,0 +1,56 @@
+Components of Splunk
+1- Forwarder : collect and forward raw data to indexer
+2- Indexer : Process ,store and create searchable indexes from incoming data
+3- Search-Head : Enable Users to search ,analyze and visualize data using SPL
+
+the three default roles for enterprise are 
+1- Admin in cloud its name
+2-  Power 
+3- User
+
+there is additional roles in cloud like
+1- can_delete
+2- token_auth
+3- apps
+
+note * 
+commands that create statistics and visulaizations are called transforming commands
+by default the search job will be active for 10 minutes
+shared search job remain active for 7 days and viewable to anyone shared with
+
+export format:
+1- Raw
+2- CSV
+3- XML
+4- JSON
+
+modes for search:
+1- fast : field discovery disabled 
+2- smart : based on the search
+3- verbose : much data as possible
+ 
+using ur search bar:
+- wild card like * used as follow  :fail*  to get failed failure fail ....etc
+- Boleans AND,OR, NOT , IN
+-  backslash character to scape quotes ( \ )
+- use pipe ( | ) to separate components
+- not case sensitive unless we need that
+
+commands classification for Splunk:
+1- search terms 
+2- commands
+3- functions
+4- arguments
+5- clauses
+
+knowledge objects:  (power or admin are the one who share it)
+1- data interpretation : fields ,field extractions and calculated fields
+2- data classification: Event types, transactions
+3- data enrichment: lookups,workflow actions
+4- data normalization: Tags,field aliases
+5- data models: Hierarchically Structured Datasets
+
+note from me 
+*organized reports  and dashboards are usefull for u too not only to deliver them but u can make ease ur work and make it faster*
+
+  
