@@ -1,0 +1,33 @@
+Formatting Commands
+
+in the (| field ) if the - operator attached to the name it will applied on it only if there is space between the operator and name it will be applied to all values further
+| table will make the search limited to give u table with only columns  the parameter u give after
+| dedup  command will make the results unique and remove duplicated results (use it in smth like session id not prices as most likely that will not what u will need)
+u can also use things like labelfield ,fieldname in functions like | addtotals
+| fieldformat used to create ew field values underlying data in the index doesn't change
+
+Visualizing Data
+
+any search that return statistical values can be viewed as a chart
+Transforming commands :
+|top finds the most common values use limit=0 to make results unlimited u can use clauses like (by or showperc or anything compatable)
+ |rare same like top but show least common values
+|stats can take clauses like count ,as ,by ,etc....
+|chart takes two clauses statements like over and by (we still having functions like count ) only 2 because it has XY axis only (note:if u didnt use over and used just by the first argument will be taken as an over)
+|timechart
+|trendline
+
+Generating Maps
+|iplocation 
+|geostats
+|geom
+
+Single Value Visualizations
+selected from visualization tab to select what u need i suggest using it , Pretty fun :)
+ 
+Visual Formatting
+
+selected from statistics tab and use the format that fits ur need
+
+
+Statistical and charting functions(opens in a new tab) (Splunk Documentation)
