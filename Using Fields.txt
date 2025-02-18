@@ -1,0 +1,41 @@
+searching fields minimize the output values 
+field names are case senesitive but values not
+
+In the Fields sidebar, Interesting Fields occur in at least  20% of resulting events. 
+= , != are used for numerical or not numerical values
+> , >= , < , <= are used only for numerical
+
+u can add fields in search bar by only cicking it
+
+u have options like:
+ | fields  , 
+ | stats , 
+ | rename ... as “...” , 
+ | eval (used to recalculate values like from bytes to megabytes),
+ |erex , |rex   (Rex is used for field extraction using regular expressions, whereas erex assists in creating those regular expressions u need to regex if using rex )
+
+*Index time Field extraction - *
+• It happens at index time when splunk indexes data.
+
+• At index time, it extracts some default fields like source, source types and hosts.
+
+• We can also define our custom source types, hosts so that it tags events with them.
+
+
+*Search time field extraction- *
+• It happens at search time when we search through data.
+
+• It can extract additional fields other than default fields depending on its search settings.
+
+• It includes aliasing, tagging, addition of fields from lookup. But here, you cannot change host or source type assignments.
+
+u can make filed aliases named if employee to search better if u have fields like  User,Username,Name and gather them all in one new aliases
+
+unindexed data can be gathered by just taking the code and discription for it to be a field   like response 200 OK
+
+
+
+About Splunk regular expressions(opens in a new tab) (Splunk Documentation)
+Introduction to RegEx(opens in a new tab) (Splunk How-To YouTube Channel)
+
+
